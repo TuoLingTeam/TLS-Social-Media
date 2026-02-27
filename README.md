@@ -1,14 +1,14 @@
-# 社媒助手
+# 驼铃电商社媒助手
 
 日常工作中，经常会有从需要各社媒平台采集数据的场景，在使用量不大的情况下，手动处理，太麻烦；用其他产品，可能很贵或需要自己配置非常复杂的开发环境。
 
-所以，本人开发了社媒助手插件，只需在浏览器上安装此插件，即可实现数据采集的自给自足。无需进行任何额外的操作！
+所以，本人开发了驼铃电商社媒助手插件，只需在浏览器上安装此插件，即可实现数据采集的自给自足。无需进行任何额外的操作！
 
 目前开源版支持的平台有小红书、抖音、快手，其他平台敬请期待！
 
 ## 版本说明
 
-插件目前共分为三个版本，分别是[商店版](https://chrome.google.com/webstore/detail/dbichmdlbjdeplpkhcejgkakobjbjalc)、[开源版](https://github.com/iszhouhua/social-media-copilot/tree/main)、[server版](https://github.com/iszhouhua/social-media-copilot/tree/server)
+插件目前共分为三个版本，分别是[商店版](https://chrome.google.com/webstore/detail/dbichmdlbjdeplpkhcejgkakobjbjalc)、[开源版](https://github.com/TuoLingTeam/TLS-Social-Media/tree/main)、[server版](https://github.com/TuoLingTeam/TLS-Social-Media/tree/server)
 
 其中，`商店版`功能最全面，但是不开源。`开源版`和`server版`均开源。
 
@@ -18,14 +18,14 @@
 
 ### server版
 
-通过API进行调用，且支持自定义部署，维护于[server](https://github.com/iszhouhua/social-media-copilot/tree/server)分支中，适合需要通过API获取数据的用户。
+通过API进行调用，且支持自定义部署，维护于[server](https://github.com/TuoLingTeam/TLS-Social-Media/tree/server)分支中，适合需要通过API获取数据的用户。
 
 该分支**服务器端**对外提供`HTTP`服务，通过[socket.io](https://github.com/socketio/socket.io)将请求代理到**插件端**，由插件端发起实际请求并将结果回调给**服务器端**。
 
 
 ### 开源版（当前分支）
 
-基于社媒助手`v0.x`版本的代码进行开源，维护于[main](https://github.com/iszhouhua/social-media-copilot/tree/main)分支中，会做一些基础功能的维护，供大家学习交流使用。
+基于驼铃电商社媒助手`v0.x`版本的代码进行开源，维护于[main](https://github.com/TuoLingTeam/TLS-Social-Media/tree/main)分支中，会做一些基础功能的维护，供大家学习交流使用。
 
 开源版目前支持的主要功能如下：
 

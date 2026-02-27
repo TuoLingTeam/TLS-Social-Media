@@ -99,8 +99,8 @@ const App = () => {
                 <Item icon={ksIcon} title="快手" onClick={() => window.open("https://www.kuaishou.com")} />
             </CollapsibleItem>}
         <Separator />
-        <Item icon={GitBranch} title="查看源码" iconClassName="text-violet-600" onClick={() => window.open('https://github.com/iszhouhua/social-media-copilot')} />
-        <Item icon={Bug} title="提交反馈" iconClassName="text-rose-600" onClick={() => window.open('https://github.com/iszhouhua/social-media-copilot/issues')} />
+        <Item icon={GitBranch} title="查看源码" iconClassName="text-violet-600" onClick={() => window.open('https://github.com/TuoLingTeam/TLS-Social-Media')} />
+        <Item icon={Bug} title="提交反馈" iconClassName="text-rose-600" onClick={() => window.open('https://github.com/TuoLingTeam/TLS-Social-Media/issues')} />
     </div>);
 };
 

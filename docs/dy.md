@@ -1,6 +1,6 @@
 # 抖音功能说明
 
-社媒助手开源版[抖音](https://www.douyin.com)平台的功能说明
+驼铃电商社媒助手[抖音](https://www.douyin.com)平台的功能说明
 
 ## 植入功能
 

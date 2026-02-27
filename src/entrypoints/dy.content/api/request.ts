@@ -6,6 +6,7 @@
  */
 
 import axios, { AxiosError, AxiosHeaders, AxiosPromise, AxiosResponse, InternalAxiosRequestConfig } from "axios";
+import { sendMessage } from "@/utils/messaging";
 
 const adapter = async (config: InternalAxiosRequestConfig): AxiosPromise => {
     const init: RequestInit = {
@@ -13,14 +14,23 @@ const adapter = async (config: InternalAxiosRequestConfig): AxiosPromise => {
         headers: AxiosHeaders.from(config.headers).normalize(true),
         body: config.data
     };
-    const data = await sendMessage("fetch", {
-        ...init,
-        url: axios.getUri(config),
-    });
-    if (!data) {
-        throw new AxiosError('请求失败')
+    
+    try {
+        const data = await sendMessage("fetch", {
+            ...init,
+            url: axios.getUri(config),
+        });
+        
+        if (!data) {
+            console.error('Request failed: no data returned from background script');
+            throw new AxiosError('请求失败：未返回数据');
+        }
+        
+        return { data, status: 200, statusText: "OK", headers: {}, config };
+    } catch (error) {
+        console.error('Adapter error:', error);
+        throw new AxiosError('请求失败');
     }
-    return { data, status: 200, statusText: "OK", headers: {}, config };
 };
 
 const request = axios.create({

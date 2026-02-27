@@ -8,6 +8,7 @@
 
 import axios, { AxiosResponse, InternalAxiosRequestConfig } from "axios";
 import { md5 } from 'js-md5';
+import { sendMessage } from "@/utils/messaging";
 
 const baseUrl = "https://edith.xiaohongshu.com";
 

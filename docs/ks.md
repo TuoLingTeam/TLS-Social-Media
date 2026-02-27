@@ -1,6 +1,6 @@
 # 快手功能说明
 
-社媒助手开源版[快手](https://www.kuaishou.com)平台的功能说明
+驼铃电商社媒助手[快手](https://www.kuaishou.com)平台的功能说明
 
 ## 植入功能
 
